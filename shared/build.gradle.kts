@@ -40,3 +40,21 @@ kotlin {
     }
 
 }
+
+android {
+    namespace = "com.ktlevell.gronur.shared"
+    compileSdk = libs.versions.android.compileSdk.get().toInt()
+
+    defaultConfig {
+        minSdk = libs.versions.android.minSdk.get().toInt()
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    debugImplementation(libs.compose.uiTooling)
+}
