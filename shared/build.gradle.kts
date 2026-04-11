@@ -25,8 +25,6 @@ kotlin {
         }
     }
 
-    jvm()
-
     sourceSets {
         androidMain.dependencies {}
         commonMain.dependencies {

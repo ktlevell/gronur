@@ -1,4 +1,3 @@
-import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
@@ -22,11 +21,9 @@ kotlin {
         iosTarget.binaries.framework {
             baseName = "ComposeApp"
             isStatic = true
-            freeCompilerArgs += listOf("-Xbinary=bundleId=com.ktlevell.gronur.gronut")
+            freeCompilerArgs += listOf("-Xbinary=bundleId=com.ktlevell.gronur")
         }
     }
-
-    jvm()
 
     sourceSets {
         androidMain.dependencies {
@@ -52,11 +49,11 @@ kotlin {
 }
 
 android {
-    namespace = "com.ktlevell.gronur.gronur"
+    namespace = "com.ktlevell.gronur"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = "com.ktlevell.gronur.gronur"
+        applicationId = "com.ktlevell.gronur"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 1
