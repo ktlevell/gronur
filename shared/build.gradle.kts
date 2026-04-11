@@ -25,6 +25,8 @@ kotlin {
         }
     }
 
+    jvm()
+
     sourceSets {
         androidMain.dependencies {}
         commonMain.dependencies {
@@ -36,6 +38,8 @@ kotlin {
             implementation(libs.compose.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodelCompose)
             implementation(libs.androidx.lifecycle.runtimeCompose)
+
+            implementation(libs.constraint.layout.cmp)
         }
         iosMain.dependencies {}
     }

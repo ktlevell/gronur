@@ -5,6 +5,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.sp
 import gronur.shared.generated.resources.Inter_18pt_Bold
 import gronur.shared.generated.resources.Inter_18pt_Light
 import gronur.shared.generated.resources.Inter_18pt_Medium
@@ -26,7 +27,8 @@ val Typography @Composable get() = Typography(
     headlineLarge = TextStyle(
         fontFamily = Inter,
         fontSize = FontSize.EXTRA_LARGE,
-        fontWeight = FontWeight.Bold
+        fontWeight = FontWeight.W900,
+        lineHeight = 60.sp
     ),
     headlineMedium = TextStyle(
         fontFamily = Inter,
