@@ -57,20 +57,11 @@ fun CategoryChip(
         label = "textColor"
     )
 
-    val scale by animateFloatAsState(
-        targetValue = if (isSelected) 1.05f else 1f,
-        animationSpec = spring(dampingRatio = Spring.DampingRatioMediumBouncy),
-        label = "scale"
-    )
 
     Box(
         modifier = modifier
-            .graphicsLayer {
-                scaleX = scale
-                scaleY = scale
-            }
             .width(120.dp)
-            .height(56.dp)
+            .height(46.dp)
             .clip(RoundedCornerShape(30.dp))
             .background(color = backgroundColor,)
             .clickable { onClick() },
@@ -78,7 +69,8 @@ fun CategoryChip(
     ) {
         Text(
             text = category,
-            style = MaterialTheme.typography.bodyLarge,
+            style = MaterialTheme.typography.bodyMedium,
+            maxLines = 1,
             color = contentColor,
             fontWeight = if (isSelected) FontWeight.SemiBold else FontWeight.Normal,
         )

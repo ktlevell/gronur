@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -13,12 +14,14 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.gronur.shared.theme.GronurTheme
 
 @Composable
-fun GroceryTopAppBar(
+fun GronurTopAppBar(
     title: String,
     search: @Composable () -> Unit,
     modifier: Modifier = Modifier
@@ -26,7 +29,8 @@ fun GroceryTopAppBar(
     Surface(
         modifier = modifier
             .fillMaxWidth()
-            .height(200.dp),
+            .height(140.dp)
+        ,
         shape = RoundedCornerShape(0.dp),
         color = MaterialTheme.colorScheme.onPrimary,
         contentColor = MaterialTheme.colorScheme.primary,
@@ -34,16 +38,22 @@ fun GroceryTopAppBar(
         Row(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(horizontal = 16.dp)
+                .statusBarsPadding()
+                .padding(start = 16.dp, end = 16.dp, bottom = 16.dp)
             ,
-            verticalAlignment = Alignment.CenterVertically,
+            verticalAlignment = Alignment.Bottom,
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
             Text(
                 modifier = Modifier
                     .weight(1f),
                 text = title,
-                style = MaterialTheme.typography.headlineLarge
+                style = MaterialTheme.typography.headlineMedium.copy(
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 36.sp,
+                    lineHeight = 38.sp,
+                    letterSpacing = 0.9.sp
+                )
             )
 
             search()
@@ -53,9 +63,9 @@ fun GroceryTopAppBar(
 
 @Composable
 @Preview
-fun GroceryTopAppBarPreview() {
+fun GronurTopAppBarPreview() {
     GronurTheme {
-        GroceryTopAppBar(
+        GronurTopAppBar(
             title = "Daily\nGrocery Food",
             search = {
                 CircleSearchBar(

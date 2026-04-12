@@ -15,7 +15,6 @@ object GronurIcons {
     @Composable
     fun cart(): Painter = painterResource(Res.drawable.ic_shopping_cart)
 
-
     @Composable
     fun mail(): Painter = painterResource(Res.drawable.ic_mail)
 
@@ -47,16 +46,10 @@ object GronurIcons {
     fun wallet(): Painter = painterResource(Res.drawable.ic_wallet)
 
     @Composable
-    fun apple(): Painter = painterResource(Res.drawable.it_apple)
-
-    @Composable
     fun garlic(): Painter = painterResource(Res.drawable.ic_garlic)
 
     @Composable
     fun refresh(): Painter = painterResource(Res.drawable.ic_refresh)
-
-    @Composable
-    fun orange(): Painter = painterResource(Res.drawable.it_orange)
 
     @Composable
     fun location(): Painter = painterResource(Res.drawable.ic_location)
@@ -75,12 +68,6 @@ object GronurIcons {
 
     @Composable
     fun strawberryIcon(): Painter = painterResource(Res.drawable.ic_strawberry)
-
-    @Composable
-    fun redDragon(): Painter = painterResource(Res.drawable.it_red_dragon)
-
-    @Composable
-    fun strawberry(): Painter = painterResource(Res.drawable.it_strawberry)
 
     @Composable
     fun watermelon(): Painter = painterResource(Res.drawable.it_watermelon)

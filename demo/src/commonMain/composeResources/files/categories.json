@@ -1,0 +1,781 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Frutas",
+      "products": [
+        {
+          "id": 1,
+          "name": "Banana Prata",
+          "price": 14.99,
+          "old_price": 12.99,
+          "unit": "kg",
+          "calories": 89,
+          "description": "A Banana Prata é uma das variedades mais consumidas no Brasil, conhecida pela sua polpa consistente e sabor levemente ácido. Ideal para consumo in natura ou em diversas receitas.",
+          "product_url": "assets/banana_prata.webp"
+        },
+        {
+          "id": 2,
+          "name": "Manga Palmer",
+          "price": 14.99,
+          "old_price": null,
+          "unit": "kg",
+          "calories": 60,
+          "description": "A Manga Palmer possui polpa amarela, doce e praticamente sem fibras. É uma excelente fonte de vitaminas A e C, perfeita para sucos, sobremesas ou consumo direto.",
+          "product_url": "assets/manga_palmer.webp"
+        },
+        {
+          "id": 3,
+          "name": "Mamão Papaia",
+          "price": 14.99,
+          "old_price": null,
+          "unit": "kg",
+          "calories": 43,
+          "description": "O Mamão Papaia Oba Bem Querer é selecionado para garantir a melhor doçura e textura. Rico em papaína, auxilia na digestão e é ideal para o café da manhã.",
+          "product_url": "assets/mamao_papaia.webp"
+        },
+        {
+          "id": 4,
+          "name": "Banana Nanica",
+          "price": 9.99,
+          "old_price": null,
+          "unit": "kg",
+          "calories": 92,
+          "description": "A Banana Nanica, apesar do nome, é grande e muito doce quando madura. Ótima para fazer bolos, doces ou comer com aveia e mel.",
+          "product_url": "assets/babana_nanica.webp"
+        },
+        {
+          "id": 5,
+          "name": "Limão Tahiti",
+          "price": 8.99,
+          "old_price": null,
+          "unit": "kg",
+          "calories": 30,
+          "description": "O Limão Tahiti é extremamente suculento e possui casca fina. Indispensável na culinária para temperar carnes, saladas e preparar bebidas refrescantes.",
+          "product_url": "assets/limao_tahiti.webp"
+        },
+        {
+          "id": 6,
+          "name": "Pera Williams",
+          "price": 18.99,
+          "old_price": 16.99,
+          "unit": "kg",
+          "calories": 57,
+          "description": "A Pera Williams tem textura macia e sabor bem doce quando madura. É excelente para acompanhar queijos ou ser utilizada em conservas e tortas.",
+          "product_url": "assets/pera_willians.webp"
+        },
+        {
+          "id": 7,
+          "name": "Uva Verde",
+          "price": 17.99,
+          "old_price": null,
+          "unit": "500g",
+          "calories": 67,
+          "description": "Uvas verdes selecionadas, crocantes e sem sementes. Práticas para o lanche das crianças ou para compor tábuas de frios.",
+          "product_url": "assets/uva_verde_sem_semente.webp"
+        },
+        {
+          "id": 8,
+          "name": "Morango",
+          "price": 14.99,
+          "old_price": null,
+          "unit": "200g",
+          "calories": 33,
+          "description": "Morangos frescos e aromáticos, colhidos no ponto certo de maturação. Perfeitos para sobremesas, sucos ou consumo com iogurte.",
+          "product_url": "assets/morango.webp"
+        },
+        {
+          "id": 9,
+          "name": "Abacate",
+          "price": 9.99,
+          "old_price": 7.99,
+          "unit": "kg",
+          "calories": 160,
+          "description": "Abacate de excelente qualidade, com polpa cremosa e rica em gorduras saudáveis. Ideal para guacamole, vitaminas ou saladas.",
+          "product_url": "assets/abacate.webp"
+        },
+        {
+          "id": 10,
+          "name": "Abacaxi Pérola",
+          "price": 14.99,
+          "old_price": null,
+          "unit": "un",
+          "calories": 50,
+          "description": "O Abacaxi Pérola é conhecido por ser muito doce e ter polpa clara. Ótimo para auxiliar na digestão após as refeições ou em sucos naturais.",
+          "product_url": "assets/abacaxi_perola.webp"
+        },
+        {
+          "id": 11,
+          "name": "Maçã Fuji",
+          "price": 22.99,
+          "old_price": null,
+          "unit": "kg",
+          "calories": 52,
+          "description": "A Maçã Fuji é muito crocante e doce, com boa durabilidade. Uma ótima opção de lanche saudável e prático para o dia a dia.",
+          "product_url": "assets/apple_red.webp"
+        },
+        {
+          "id": 13,
+          "name": "Goiaba Vermelha",
+          "price": 9.99,
+          "old_price": 7.99,
+          "unit": "kg",
+          "calories": 68,
+          "description": "Goiaba vermelha fresca, rica em vitamina C e fibras. Pode ser consumida in natura ou utilizada em sucos, geleias e doces.",
+          "product_url": "assets/goiaba_vermelha.webp"
+        },
+        {
+          "id": 14,
+          "name": "Laranja Pera Rio",
+          "price": 8.99,
+          "old_price": null,
+          "unit": "kg",
+          "calories": 47,
+          "description": "A Laranja Pera é ideal para fazer sucos devido ao seu grande rendimento e sabor equilibrado entre doce e ácido.",
+          "product_url": "assets/laranja_pera_rio.webp"
+        },
+        {
+          "id": 15,
+          "name": "Maçã Gala",
+          "price": 19.99,
+          "old_price": null,
+          "unit": "kg",
+          "calories": 52,
+          "description": "A Maçã Gala possui casca fina e polpa macia e doce. É uma das favoritas das crianças pelo seu sabor suave.",
+          "product_url": "assets/maca_gala.webp"
+        },
+        {
+          "id": 16,
+          "name": "Laranja Bahia",
+          "price": 14.99,
+          "old_price": 9.99,
+          "unit": "kg",
+          "calories": 47,
+          "description": "Laranja de tamanho grande, casca grossa e sem sementes. Fácil de descascar e excelente para consumo in natura.",
+          "product_url": "assets/laranja_bahia_importada.webp"
+        },
+        {
+          "id": 17,
+          "name": "Limão Tahiti 1kg",
+          "price": 9.99,
+          "old_price": null,
+          "unit": "kg",
+          "calories": 30,
+          "description": "Pacote de 1kg de Limão Tahiti selecionado Oba Bem Querer. Praticidade e qualidade garantida para suas receitas.",
+          "product_url": "assets/limao_tahiti.webp"
+        },
+        {
+          "id": 18,
+          "name": "Tangerina Imp.",
+          "price": 19.99,
+          "old_price": null,
+          "unit": "kg",
+          "calories": 53,
+          "description": "Tangerina importada de altíssima qualidade, muito suculenta e com sabor intenso. Ótima fonte de vitamina C.",
+          "product_url": "assets/tangerina_importada.webp"
+        },
+        {
+          "id": 19,
+          "name": "Melão Amarelo",
+          "price": 19.99,
+          "old_price": null,
+          "unit": "kg",
+          "calories": 34,
+          "description": "O Melão Amarelo Rei destaca-se pela sua doçura superior e polpa firme. Refrescante e hidratante, ideal para dias quentes.",
+          "product_url": "assets/melao_amarelo_rei.webp"
+        },
+        {
+          "id": 20,
+          "name": "Mirtilo Importada",
+          "price": 18.99,
+          "old_price": null,
+          "unit": "125g",
+          "calories": 57,
+          "description": "Mirtilos (blueberries) importados, ricos em antioxidantes. Pequenos no tamanho, mas gigantes em benefícios para a saúde.",
+          "product_url": "assets/mirtilo_importado.webp"
+        },
+        {
+          "id": 21,
+          "name": "Melancia Fatiada",
+          "price": 16.99,
+          "old_price": null,
+          "unit": "kg",
+          "calories": 30,
+          "description": "Melancia fresca, descascada e fatiada pronta para o consumo. Máxima praticidade para sua hidratação diária.",
+          "product_url": "assets/melancia_descascada_e_fatiada.webp"
+        },
+        {
+          "id": 40,
+          "name": "Manga Espada",
+          "price": 12.99,
+          "old_price": null,
+          "unit": "kg",
+          "calories": 60,
+          "description": "A Manga Espada é uma das variedades mais tradicionais, com sabor marcante e polpa fibrosa e suculenta.",
+          "product_url": "assets/manga_espada.webp"
+        },
+        {
+          "id": 41,
+          "name": "Manga Keitt",
+          "price": 15.99,
+          "old_price": null,
+          "unit": "kg",
+          "calories": 60,
+          "description": "A Manga Keitt é conhecida pelo seu formato oval, pouca fibra e sabor doce suave, sendo excelente para consumo in natura.",
+          "product_url": "assets/manga_keitt.webp"
+        },
+        {
+          "id": 42,
+          "name": "Banana da Terra",
+          "price": 11.99,
+          "old_price": null,
+          "unit": "kg",
+          "calories": 122,
+          "description": "A Banana da Terra é a maior das variedades, ideal para ser consumida cozida, frita ou assada.",
+          "product_url": "assets/banana_da_terra.webp"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Verduras",
+      "products": [
+        {
+          "id": 22,
+          "name": "Brócolis Ninja",
+          "price": 12.99,
+          "old_price": null,
+          "unit": "250g",
+          "calories": 34,
+          "description": "Brócolis tipo Ninja com floretes compactos e cor verde escura. Rico em ferro e vitaminas, ideal para preparos no vapor.",
+          "product_url": "assets/couve_fatiada.webp"
+        },
+        {
+          "id": 23,
+          "name": "Repolho Roxo",
+          "price": 14.98,
+          "old_price": null,
+          "unit": "kg",
+          "calories": 31,
+          "description": "Repolho Roxo. Suas folhas em formato de repolho são perfeitas para sanduíches e saladas variadas.",
+          "product_url": "assets/repolho_roxo.webp"
+        },
+        {
+          "id": 25,
+          "name": "Couve Flor",
+          "price": 13.99,
+          "old_price": null,
+          "unit": "250g",
+          "calories": 25,
+          "description": "Couve-flor selecionada, rica em nutrientes e muito versátil. Pode ser consumida gratinada, em purês ou arroz de couve-flor.",
+          "product_url": "assets/couve_flor.webp"
+        },
+        {
+          "id": 26,
+          "name": "Alface Crespa",
+          "price": 6.99,
+          "old_price": null,
+          "unit": "un",
+          "calories": 15,
+          "description": "Alface Crespa com folhas soltas e bordas onduladas. Muito versátil para o dia a dia, trazendo leveza às refeições.",
+          "product_url": "assets/alface_crespa_hidroponica.webp"
+        },
+        {
+          "id": 27,
+          "name": "Cortes de Alface Americana",
+          "price": 12.58,
+          "old_price": null,
+          "unit": "un",
+          "calories": 14,
+          "description": "Folhas de Alface Americana já cortadas e prontas para o consumo. Mais tempo e praticidade para sua rotina de alimentação saudável.",
+          "product_url": "assets/cortes_alface_americana.webp"
+        },
+        {
+          "id": 28,
+          "name": "Rúcula Higienizada",
+          "price": 12.99,
+          "old_price": null,
+          "unit": "160g",
+          "calories": 25,
+          "description": "Rúcula fresca, já lavada e higienizada. Ideal para quem busca rapidez sem abrir mão de uma alimentação saudável.",
+          "product_url": "assets/rucula_higienizada.webp"
+        },
+        {
+          "id": 29,
+          "name": "Repolho Verde Liso",
+          "price": 14.99,
+          "old_price": null,
+          "unit": "140g",
+          "calories": 25,
+          "description": "Mix de folhas selecionadas e higienizadas. Sabor e frescor garantidos pela linha Oba Bem Querer.",
+          "product_url": "assets/repolho_verde_liso.webp"
+        },
+        {
+          "id": 30,
+          "name": "Couve Maço",
+          "price": 9.99,
+          "old_price": null,
+          "unit": "un",
+          "calories": 27,
+          "description": "Couve manteiga em maço, com folhas verdes escuras e nutritivas. Perfeita para refogados ou para o clássico suco verde.",
+          "product_url": "assets/couve_maco.webp"
+        },
+        {
+          "id": 32,
+          "name": "Couve Fatiada",
+          "price": 49.90,
+          "old_price": null,
+          "unit": "un",
+          "calories": 27,
+          "description": "Couve fresca já fatiada finamente, pronta para refogar ou compor pratos como a feijoada com total praticidade.",
+          "product_url": "assets/couve_fatiada.webp"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Legumes",
+      "products": [
+        {
+          "id": 1,
+          "name": "Batata Doce Rosada",
+          "price": 11.99,
+          "old_price": null,
+          "unit": "600g",
+          "calories": 86,
+          "description": "Batata doce rosada selecionada, rica em carboidratos de baixo índice glicêmico.",
+          "product_url": "assets/batata_doce_rosada_organica.webp"
+        },
+        {
+          "id": 2,
+          "name": "Batata Inglesa",
+          "price": 8.99,
+          "old_price": null,
+          "unit": "kg",
+          "calories": 77,
+          "description": "Batata inglesa de ótima qualidade, versátil para todos os tipos de preparo.",
+          "product_url": "assets/batata_inglesa.webp"
+        },
+        {
+          "id": 3,
+          "name": "Cebola",
+          "price": 7.99,
+          "old_price": null,
+          "unit": "kg",
+          "calories": 40,
+          "description": "Cebola branca selecionada, indispensável para o tempero do dia a dia.",
+          "product_url": "assets/cebola.webp"
+        },
+        {
+          "id": 4,
+          "name": "Tomate Holandês Rama",
+          "price": 17.99,
+          "old_price": null,
+          "unit": "kg",
+          "calories": 18,
+          "description": "Tomate holandês em rama, extremamente saboroso e decorativo para seus pratos.",
+          "product_url": "assets/tomate_holandes.webp"
+        },
+        {
+          "id": 5,
+          "name": "Pimentão Amarelo Extra",
+          "price": 8.39,
+          "old_price": null,
+          "unit": "un",
+          "calories": 27,
+          "description": "Pimentão amarelo extra, carnudo e levemente adocicado.",
+          "product_url": "assets/pimentao_amarelo_extra.webp"
+        },
+        {
+          "id": 6,
+          "name": "Abobora Cabotiã",
+          "price": 10.48,
+          "old_price": null,
+          "unit": "un",
+          "calories": 26,
+          "description": "Abóbora cabotiã (japonesa), perfeita para purês e assados.",
+          "product_url": "assets/abobora_cabotia.webp"
+        },
+        {
+          "id": 7,
+          "name": "Alho Roxo",
+          "price": 29.90,
+          "old_price": null,
+          "unit": "kg",
+          "calories": 149,
+          "description": "Alho roxo de sabor intenso e qualidade superior.",
+          "product_url": "assets/alho_roxo.webp"
+        },
+        {
+          "id": 8,
+          "name": "Beterraba",
+          "price": 9.99,
+          "old_price": null,
+          "unit": "kg",
+          "calories": 43,
+          "description": "Beterraba fresca, rica em ferro e nutrientes essenciais.",
+          "product_url": "assets/beterraba.webp"
+        },
+        {
+          "id": 9,
+          "name": "Pimentão Verde",
+          "price": 4.58,
+          "old_price": null,
+          "unit": "un",
+          "calories": 20,
+          "description": "Pimentão verde selecionado, ideal para refogados e recheios.",
+          "product_url": "assets/pimentao_verde.webp"
+        },
+        {
+          "id": 10,
+          "name": "Cenoura Extra",
+          "price": 12.99,
+          "old_price": null,
+          "unit": "kg",
+          "calories": 41,
+          "description": "Cenoura extra, crocante e rica em betacaroteno.",
+          "product_url": "assets/cenoura_extra.webp"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Cogumelos",
+      "products": [
+        {
+          "id": 50,
+          "name": "Shimeji Preto",
+          "price": 16.90,
+          "unit": "200g",
+          "calories": 35,
+          "description": "Shimeji preto fresco. Um dos cogumelos mais apreciados na culinária asiática, especialmente na manteiga.",
+          "product_url": "assets/cogumelo_shimeji_preto_hochibra.png"
+        },
+        {
+          "id": 51,
+          "name": "Champignon Paris",
+          "price": 12.90,
+          "unit": "200g",
+          "calories": 22,
+          "description": "Cogumelo Paris fresco, também conhecido como Champignon. Muito versátil na culinária mundial.",
+          "product_url": "assets/cogumelo_champignon_paris.png"
+        },
+        {
+          "id": 52,
+          "name": "Shitake Fatiado",
+          "price": 14.90,
+          "unit": "200g",
+          "calories": 34,
+          "description": "Shitake já fatiado para facilitar seu dia a dia. Pronto para ir direto para a panela ou wok.",
+          "product_url": "assets/cogumelo_shitake_fatiado.webp"
+        },
+        {
+          "id": 53,
+          "name": "Champignon Inteiro",
+          "price": 15.90,
+          "unit": "200g",
+          "calories": 22,
+          "description": "Champignon de Paris inteiro, selecionado e fresco. Ideal para estrogonofes, molhos e acompanhamentos.",
+          "product_url": "assets/champignon_inteiro_aica.webp"
+        },
+        {
+          "id": 54,
+          "name": "Champignon Premium",
+          "price": 17.50,
+          "unit": "200g",
+          "calories": 22,
+          "description": "Champignon fatiado de qualidade premium, selecionado manualmente.",
+          "product_url": "assets/champignon_fatiado_premium.webp"
+        },
+        {
+          "id": 55,
+          "name": "Portobello",
+          "price": 19.90,
+          "unit": "200g",
+          "calories": 26,
+          "description": "Cogumelo Portobello de tamanho médio a grande. Possui textura carnuda e sabor amendoado.",
+          "product_url": "assets/cogumelo_portobello_hochibra.webp"
+        },
+        {
+          "id": 56,
+          "name": "Shitake Inteiro",
+          "price": 18.50,
+          "unit": "200g",
+          "calories": 34,
+          "description": "Shitake inteiro de altíssima qualidade. Possui sabor intenso e textura firme.",
+          "product_url": "assets/cogumelo_shitake_inteiro.png"
+        },
+        {
+          "id": 57,
+          "name": "Broto Mix Biomas",
+          "price": 12.99,
+          "unit": "120g",
+          "calories": 25,
+          "description": "Mix de brotos selecionados, rico em nutrientes e frescor.",
+          "product_url": "assets/broto_mix_biomas_120.png"
+        },
+        {
+          "id": 58,
+          "name": "Champignon Green",
+          "price": 15.90,
+          "unit": "200g",
+          "calories": 22,
+          "description": "Champignon fatiado sustentável, frescor garantido da fazenda para sua mesa.",
+          "product_url": "assets/champignon_green_fatiado.webp"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Temperos",
+      "products": [
+        {
+          "id": 60,
+          "name": "Alho Poró",
+          "price": 8.90,
+          "unit": "un",
+          "calories": 61,
+          "description": "Alho poró fresquinho, ideal para sopas, quiches e refogados especiais.",
+          "product_url": "assets/alho_proro_unidade.webp"
+        },
+        {
+          "id": 61,
+          "name": "Cheiro Verde",
+          "price": 4.50,
+          "unit": "un",
+          "calories": 36,
+          "description": "Mix de salsa e cebolinha hidropônicos, colhidos no dia para maior frescor.",
+          "product_url": "assets/cheiro_verde_hidroponico_unidade.webp"
+        },
+        {
+          "id": 62,
+          "name": "Coentro",
+          "price": 4.50,
+          "unit": "un",
+          "calories": 23,
+          "description": "Coentro hidropônico de aroma marcante, essencial na culinária regional e frutos do mar.",
+          "product_url": "assets/coentro_hidroponico.webp"
+        },
+        {
+          "id": 63,
+          "name": "Bandeja de Salsão",
+          "price": 9.90,
+          "unit": "un",
+          "calories": 16,
+          "description": "Talos de salsão (aipo) selecionados, ideais para saladas crocantes e caldos.",
+          "product_url": "assets/bandeja_de_salsao_oba.webp"
+        },
+        {
+          "id": 64,
+          "name": "Alecrim",
+          "price": 5.90,
+          "unit": "maço",
+          "calories": 131,
+          "description": "Alecrim fresco, ideal para temperar carnes brancas, batatas e pães.",
+          "product_url": "assets/maco_de_alecrim.webp"
+        },
+        {
+          "id": 65,
+          "name": "Salsão Maço",
+          "price": 7.90,
+          "unit": "maço",
+          "calories": 16,
+          "description": "Maço de salsão fresco com folhas, perfeito para temperar caldos e sucos detox.",
+          "product_url": "assets/salsao_maco.webp"
+        },
+        {
+          "id": 66,
+          "name": "Pimenta Dedo de Moça",
+          "price": 3.90,
+          "unit": "100g",
+          "calories": 40,
+          "description": "Pimenta dedo de moça vermelha, picante na medida certa para molhos e conservas.",
+          "product_url": "assets/pimenta_dedo_de_moca_vermelha.webp"
+        },
+        {
+          "id": 67,
+          "name": "Açafrão da Terra",
+          "price": 12.90,
+          "unit": "200g",
+          "calories": 354,
+          "description": "Cúrcuma fresca (açafrão da terra), poderosa aliada da saúde e tempero vibrante.",
+          "product_url": "assets/acafrao_oba_bem_querer.webp"
+        },
+        {
+          "id": 68,
+          "name": "Canela em Rama",
+          "price": 14.50,
+          "unit": "60g",
+          "calories": 247,
+          "description": "Canela em pau aromática, perfeita para doces, chás e infusões.",
+          "product_url": "assets/canela_rama.webp"
+        },
+        {
+          "id": 69,
+          "name": "Alho Temperado",
+          "price": 22.90,
+          "unit": "300g",
+          "calories": 149,
+          "description": "Alho em conserva temperado, pronto para servir como petisco ou acompanhamento.",
+          "product_url": "assets/alho_temperado.webp"
+        },
+        {
+          "id": 70,
+          "name": "Mix para Vinagrete",
+          "price": 6.50,
+          "unit": "40g",
+          "calories": 50,
+          "description": "Mistura desidratada de vegetais e ervas para o preparo rápido de vinagrete.",
+          "product_url": "assets/mistura_para_vinagrete.webp"
+        },
+        {
+          "id": 71,
+          "name": "Pimenta Malagueta",
+          "price": 8.90,
+          "unit": "30g",
+          "calories": 40,
+          "description": "Pimenta malagueta em conserva, para quem aprecia um sabor picante intenso.",
+          "product_url": "assets/pimenta_malagueta.webp"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Ovos",
+      "products": [
+        {
+          "id": 72,
+          "name": "Ovo Branco Jumbo Katayama",
+          "price": 10.99,
+          "unit": "10 un",
+          "calories": 75,
+          "description": "Ovos brancos jumbo de alta qualidade, selecionados para garantir frescor e tamanho superior. Ideal para todas as suas receitas.",
+          "product_url": "assets/ovo_branco_jumbo_katayama.webp"
+        },
+        {
+          "id": 73,
+          "name": "Ovo Vermelho Caipira",
+          "price": 26.90,
+          "unit": "20 un",
+          "calories": 74,
+          "description": "Ovos vermelhos caipira, produzidos por galinhas criadas soltas com alimentação natural. Sabor e nutrição para sua família.",
+          "product_url": "assets/ovo_vermelho_caipira_20_un.webp"
+        },
+        {
+          "id": 74,
+          "name": "Ovo Vermelho Caipira",
+          "price": 14.90,
+          "unit": "10 un",
+          "calories": 74,
+          "description": "Embalagem com 10 unidades de ovos vermelhos caipira, com gema mais pigmentada e sabor característico.",
+          "product_url": "assets/ovo_vermelho_caipira_10_un.webp"
+        },
+        {
+          "id": 75,
+          "name": "Ovo de Codorna",
+          "price": 11.90,
+          "unit": "30 un",
+          "calories": 14,
+          "description": "Ovos de codorna frescos e selecionados. Perfeitos para aperitivos, saladas e decorações de pratos.",
+          "product_url": "assets/ovo_de_codorna_30_un.webp"
+        },
+        {
+          "id": 76,
+          "name": "Ovos Orgânicos Fazenda da Toca",
+          "price": 32.90,
+          "unit": "20 un",
+          "calories": 74,
+          "description": "Ovos orgânicos de galinhas criadas com o máximo bem-estar. Livres de antibióticos e agrotóxicos na alimentação.",
+          "product_url": "assets/ovo_organicos_caipira_fazenda_toca_20_un.webp"
+        },
+        {
+          "id": 77,
+          "name": "Ovos Brancos Cage Free",
+          "price": 24.90,
+          "unit": "20 un",
+          "calories": 75,
+          "description": "Ovos de galinhas criadas livres de gaiolas, garantindo um produto mais ético e saudável para seu consumo.",
+          "product_url": "assets/ovos_grandes_brancos_free_acrillico_20_un.webp"
+        },
+        {
+          "id": 78,
+          "name": "Ovo Vermelho Orgânico Raiar",
+          "price": 18.90,
+          "unit": "10 un",
+          "calories": 74,
+          "description": "Ovos vermelhos orgânicos certificados, com altíssimo padrão de qualidade e respeito ao meio ambiente.",
+          "product_url": "assets/ovo_grandes_vermelhos_grandes_organico_raiar_10_un.webp"
+        },
+        {
+          "id": 79,
+          "name": "Ovo Orgânico Fazenda da Toca",
+          "price": 17.50,
+          "unit": "10 un",
+          "calories": 74,
+          "description": "A qualidade da Fazenda da Toca em embalagem de 10 unidades. Ovos saudáveis e saborosos.",
+          "product_url": "assets/ovo_organico_fazenda+da_toca_10_un.webp"
+        },
+        {
+          "id": 80,
+          "name": "Ovo Caipira Country Ito",
+          "price": 13.90,
+          "unit": "10 un",
+          "calories": 74,
+          "description": "Ovos caipira tradicionais Country Ito, conhecidos pela sua gema firme e sabor autêntico do campo.",
+          "product_url": "assets/ovo_caipira_country_it_10_un.webp"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Castanhas",
+      "products": [
+        {
+          "id": 81,
+          "name": "Castanha de Caju Torrada",
+          "price": 24.90,
+          "unit": "250g",
+          "calories": 553,
+          "description": "Castanhas de caju selecionadas, torradas no ponto certo para garantir crocância e sabor inigualável.",
+          "product_url": "assets/castanha_de_caju_torrada_250_g.webp"
+        },
+        {
+          "id": 82,
+          "name": "Castanha de Caju Salgada",
+          "price": 45.90,
+          "unit": "500g",
+          "calories": 553,
+          "description": "Versão econômica de 500g de castanha de caju torrada e levemente salgada. Ideal para compartilhar.",
+          "product_url": "assets/castanha_de_caju_torrada_salgada_500_gg.webp"
+        },
+        {
+          "id": 83,
+          "name": "Mix de Castanhas e Passas",
+          "price": 18.90,
+          "unit": "200g",
+          "calories": 450,
+          "description": "Combinação equilibrada de castanhas crocantes e uvas passas docinhas. O lanche perfeito para qualquer hora.",
+          "product_url": "assets/mix_de_castanha_uva_passa_200_g.webp"
+        },
+        {
+          "id": 84,
+          "name": "Mix Nuts Gourmet",
+          "price": 29.90,
+          "unit": "250g",
+          "calories": 580,
+          "description": "Seleção premium de nozes e castanhas gourmet. Fonte de gorduras boas e energia para o seu dia.",
+          "product_url": "assets/mix_nuts_uva_gournet_250_g.webp"
+        },
+        {
+          "id": 85,
+          "name": "Amêndoa Caramelizada Baunilha",
+          "price": 22.50,
+          "unit": "300g",
+          "calories": 520,
+          "description": "Amêndoas crocantes com uma cobertura caramelizada e um toque especial de baunilha. Irresistível.",
+          "product_url": "assets/amendoa-caramelizada_sabor_baunilha_300_g.webp"
+        }
+      ]
+    }
+  ]
+}

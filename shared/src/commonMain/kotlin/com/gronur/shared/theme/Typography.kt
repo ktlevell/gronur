@@ -28,7 +28,8 @@ val Typography @Composable get() = Typography(
         fontFamily = Inter,
         fontSize = FontSize.EXTRA_LARGE,
         fontWeight = FontWeight.W900,
-        lineHeight = 60.sp
+        lineHeight = 60.sp,
+        letterSpacing = 0.5.sp
     ),
     headlineMedium = TextStyle(
         fontFamily = Inter,

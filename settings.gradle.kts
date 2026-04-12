@@ -28,6 +28,7 @@ dependencyResolutionManagement {
     }
 }
 
+include(":demo")
 include(":composeApp")
 
 include(":shared")
