@@ -44,7 +44,9 @@ class HomeViewModel(
             }
             is HomeAction.OnProductClicked -> {}
             is HomeAction.OnAddProductClicked -> {}
-            is HomeAction.OnSearchClicked -> {}
+            is HomeAction.OnSearchClicked -> {
+
+            }
         }
     }
 

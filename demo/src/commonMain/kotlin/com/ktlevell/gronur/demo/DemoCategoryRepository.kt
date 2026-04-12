@@ -7,12 +7,12 @@ import kotlinx.serialization.json.Json
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import gronur.demo.generated.resources.Res
 
+@OptIn(ExperimentalResourceApi::class)
 class DemoCategoryRepository : CategoryRepository {
     private val json = Json {
         ignoreUnknownKeys = true
     }
 
-    @OptIn(ExperimentalResourceApi::class)
     override fun getCategories(): Flow<List<Category>> = flow {
         try {
             val bytes = Res.readBytes("files/categories.json")

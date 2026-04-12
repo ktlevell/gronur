@@ -24,7 +24,7 @@ import org.jetbrains.compose.resources.stringResource
 
 @Composable
 fun GronurScaffold(
-    onSearchClicked: () -> Unit,
+    onSearchClicked: () -> Unit = {},
     modifier: Modifier = Modifier,
     showCircleSearch: Boolean = true,
     floatingActionButton: @Composable () -> Unit = {},

@@ -6,21 +6,24 @@ import androidx.compose.material3.rememberDrawerState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.getValue
-import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.NavDestination.Companion.hasRoute
+import androidx.navigation.toRoute
 import com.gronur.shared.theme.GronurTheme
 import com.ktlevell.gronur.feature.cart.CartRoot
+import com.ktlevell.gronur.feature.details.DetailsRoot
 import com.ktlevell.gronur.feature.home.HomeRoot
 import com.ktlevell.gronur.feature.more.MoreRoot
 import com.ktlevell.gronur.feature.order.OrderRoot
+import com.ktlevell.gronur.feature.products.ProductsRoot
+import com.ktlevell.gronur.feature.search.SearchRoot
 
 
 @Composable
-fun NavigationRoot(
+fun NavigationHost(
     navController: NavHostController,
     drawerState: DrawerState = rememberDrawerState(DrawerValue.Closed)
 ) {
@@ -57,7 +60,17 @@ fun NavigationRoot(
                     startDestination = Destination.Home,
                 ) {
                     composable<Destination.Home> {
-                        HomeRoot()
+                        HomeRoot(
+                            onSearchClick = {
+                                navController.navigate(Destination.Search)
+                            },
+                            onSeeAllClick = {
+                                navController.navigate(Destination.Products)
+                            },
+                            onProductClicked = { id ->
+                                navController.navigate(Destination.Details(id = id))
+                            }
+                        )
                     }
 
                     composable<Destination.Order> {
@@ -70,6 +83,31 @@ fun NavigationRoot(
 
                     composable<Destination.More> {
                         MoreRoot()
+                    }
+
+                    composable<Destination.Details> { backStackEntry ->
+                        DetailsRoot(
+                            id = 1,
+                            onBackClicked = {
+                                navController.popBackStack()
+                            }
+                        )
+                    }
+
+                    composable<Destination.Products> {
+                        ProductsRoot(
+                            onBackClicked = {
+                                navController.popBackStack()
+                            }
+                        )
+                    }
+
+                    composable<Destination.Search> {
+                        SearchRoot(
+                            onBackClicked = {
+                                navController.popBackStack()
+                            }
+                        )
                     }
                 }
             }

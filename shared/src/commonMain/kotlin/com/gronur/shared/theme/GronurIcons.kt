@@ -73,5 +73,5 @@ object GronurIcons {
     fun watermelon(): Painter = painterResource(Res.drawable.it_watermelon)
 
     @Composable
-    fun back(): Painter = painterResource(Res.drawable.ic_arrow_back)
+    fun arrowBack(): Painter = painterResource(Res.drawable.ic_arrow_back)
 }

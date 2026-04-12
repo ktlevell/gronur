@@ -35,10 +35,12 @@ fun GronurBottomAppBar(
                     selected = selected,
                     onClick = { onDestinationClicked(destination) },
                     icon = {
-                        Icon(
-                            painter = Destination.getIcon(destination),
-                            contentDescription = destination.title
-                        )
+                        Destination.getIcon(destination)?.let {
+                            Icon(
+                                painter = it,
+                                contentDescription = destination.title
+                            )
+                        }
                     },
                     label = {
                         destination.title?.let {

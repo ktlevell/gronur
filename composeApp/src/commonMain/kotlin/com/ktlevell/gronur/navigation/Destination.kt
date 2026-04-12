@@ -43,15 +43,36 @@ sealed interface Destination {
         override val title = "More"
     }
 
+    @Serializable
+    data class Details(
+        val id: Int
+    ) : Destination {
+        override val isRoot = false
+        override val title = "Details"
+    }
+
+    @Serializable
+    data object Search : Destination {
+        override val isRoot = false
+        override val title = "Search"
+    }
+
+    @Serializable
+    data object Products : Destination {
+        override val isRoot = false
+        override val title = "Products"
+    }
+
     companion object {
 
         @Composable
-        fun getIcon(destination: Destination): Painter {
+        fun getIcon(destination: Destination): Painter? {
             return when (destination) {
                 is Home -> GronurIcons.home()
                 is Order -> GronurIcons.store()
                 is Cart -> GronurIcons.cart()
                 is More -> GronurIcons.more()
+                else -> null
             }
         }
 

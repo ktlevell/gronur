@@ -11,75 +11,52 @@ import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.painter.BitmapPainter
-import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.gronur.shared.components.buttons.CategoryChip
 import com.gronur.shared.components.cards.ItemCard
 import com.gronur.shared.components.section.SectionHeader
+import com.gronur.shared.remember.rememberLocalPainter
 import com.gronur.shared.theme.GronurTheme
 import com.ktlevell.gronur.demo.Category
 import com.ktlevell.gronur.demo.Product
 import com.ktlevell.gronur.feature.components.GronurScaffold
-import gronur.demo.generated.resources.Res
-import org.jetbrains.compose.resources.ExperimentalResourceApi
-import org.jetbrains.compose.resources.decodeToImageBitmap
 
 @Composable
 fun HomeRoot(
+    onProductClicked: (Int) -> Unit,
+    onSearchClick: () -> Unit,
+    onSeeAllClick: () -> Unit,
     viewModel: HomeViewModel = viewModel { HomeViewModel() }
 ) {
     val state by viewModel.state.collectAsState()
 
     HomeScreen(
         state = state,
-        onAction = viewModel::onAction
+        onAction = viewModel::onAction,
+        onSearchClicked = onSearchClick,
+        onSeeAllClicked = onSeeAllClick,
+        onProductClicked = onProductClicked
     )
-}
-
-@OptIn(ExperimentalResourceApi::class)
-@Composable
-fun rememberLocalPainter(path: String?): Painter? {
-    if (path == null) return null
-    
-    var painter by remember(path) { mutableStateOf<Painter?>(null) }
-    
-    LaunchedEffect(path) {
-        try {
-            val bytes = Res.readBytes("files/$path")
-            val bitmap = bytes.decodeToImageBitmap()
-            painter = BitmapPainter(bitmap)
-        } catch (e: Exception) {
-            println("Error loading image from files/$path: ${e.message}")
-        }
-    }
-    
-    return painter
 }
 
 @Composable
 fun HomeScreen(
     state: HomeUiState,
     onAction: (HomeAction) -> Unit,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    onSearchClicked: () -> Unit,
+    onSeeAllClicked: () -> Unit,
+    onProductClicked: (Int) -> Unit
 ) {
     GronurScaffold(
         modifier = modifier
             .fillMaxSize(),
-        onSearchClicked = {
-            onAction(
-                HomeAction.OnSearchClicked
-            )
-        }
+        onSearchClicked = onSearchClicked
     ) { _ ->
         LazyVerticalGrid(
             columns = GridCells.Fixed(2),
@@ -128,12 +105,13 @@ fun HomeScreen(
                     GridItemSpan(maxLineSpan)
                 }
             ) {
-                SectionHeader(
-                    title = state.selectedCategory?.let { "Popular ${it.name}" } ?: "",
-                    onSeeAllClick = {}
-                )
+                state.selectedCategory?.let { category ->
+                    SectionHeader(
+                        title = category.name,
+                        onSeeAllClick = onSeeAllClicked
+                    )
+                }
             }
-
 
             items(
                 items = state.products,
@@ -143,6 +121,7 @@ fun HomeScreen(
                     product = product,
                     painter = rememberLocalPainter(product.imageUrl),
                     onItemClick = {
+                        onProductClicked(product.id)
                         onAction(
                             HomeAction.OnProductClicked(product.id)
                         )
@@ -174,7 +153,10 @@ fun HomeScreenPreview() {
                 ),
                 selectedCategory = Category(id = 1, name = "Frutas", products = emptyList(), isSelected = true)
             ),
-            onAction = {}
+            onAction = {},
+            onSearchClicked = {},
+            onSeeAllClicked = {},
+            onProductClicked = {}
         )
     }
 }

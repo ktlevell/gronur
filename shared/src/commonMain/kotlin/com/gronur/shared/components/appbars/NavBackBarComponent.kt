@@ -26,8 +26,7 @@ fun NavBackBar(
 ) {
     Box(
         modifier = modifier
-            .width(64.dp)
-            .height(90.dp)
+            .size(48.dp)
             .clip(CircleShape)
             .border(
                 width = 2.dp,
@@ -38,10 +37,10 @@ fun NavBackBar(
         contentAlignment = Alignment.Center
     ) {
         Icon(
-            painter = GronurIcons.back(),
-            contentDescription = "Search",
+            painter = GronurIcons.arrowBack(),
+            contentDescription = "Back",
             modifier = Modifier
-                .size(36.dp),
+                .size(24.dp),
             tint = BG2
         )
     }

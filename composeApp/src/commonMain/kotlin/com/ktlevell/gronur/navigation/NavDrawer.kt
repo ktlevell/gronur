@@ -42,10 +42,12 @@ fun NavDrawer(
                             )
                         },
                         icon = {
-                            Icon(
-                                painter = Destination.getIcon(destination),
-                                contentDescription = null
-                            )
+                            Destination.getIcon(destination)?.let {
+                                Icon(
+                                    painter = it,
+                                    contentDescription = null
+                                )
+                            }
                         },
                         selected = currentDestination::class == destination::class,
                         onClick = {
